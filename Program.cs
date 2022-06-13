@@ -118,3 +118,4 @@ else if (num2 > num1 & num2> num3){
     Console.Write("максимальное число: " + num2);}
 else if (num3 > num1 & num3> num2){
 Console.Write("максимальное число: " + num3);}
+else {Console.Write("кажется, введены одинаковые числа");}

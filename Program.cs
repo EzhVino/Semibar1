@@ -87,17 +87,34 @@
 
 //Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее
 
+// Console.Write("введите первое число: ");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("введите второе число: ");
+// int num2 = Convert.ToInt32(Console.ReadLine());
+
+// if (num1 < num2){
+// Console.Write(num1 + " меньше " + num2);
+// }
+// else if (num1 > num2){
+// Console.Write(num1 + " больше " + num2);
+// }
+// else {
+//     Console.Write("введены одинаковые числа");
+// }
+
+//Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+
 Console.Write("введите первое число: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("введите второе число: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("введите третье число: ");
+int num3 = Convert.ToInt32(Console.ReadLine());
 
-if (num1 < num2){
-Console.Write(num1 + " меньше " + num2);
-}
-else if (num1 > num2){
-Console.Write(num1 + " больше " + num2);
-}
-else {
-    Console.Write("введены одинаковые числа");
-}
+
+if (num1 > num2 & num1> num3){
+    Console.Write("максимальное число: " + num1);}
+else if (num2 > num1 & num2> num3){
+    Console.Write("максимальное число: " + num2);}
+else if (num3 > num1 & num3> num2){
+Console.Write("максимальное число: " + num3);}

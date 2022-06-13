@@ -135,3 +135,37 @@
 // else {
 //     Console.Write("Введенное число нечетное");
 //     }
+
+//Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N
+
+// *Если имелось в виду, что N это положительное число, и двигаться к нему от 1 мы будем по нарастающей, то:
+
+// Console.Write("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+
+// int current = 2; 
+// while (current <= num){
+//     Console.Write(current + " "); 
+//     current = current + 2; 
+// }
+
+// *Если N может быть отрицательным, и допускается движение к нему от 1 по убывающей, то:
+
+Console.Write("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+int current; 
+if (num > 0){
+current = 2;
+while (current <= num){
+    Console.Write(current + " "); 
+    current = current + 2; 
+}}
+else {
+current = 0;
+while (current >= num){
+    Console.Write(current + " ");
+    current = current - 2;
+}}
+
+

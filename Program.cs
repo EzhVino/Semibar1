@@ -1,4 +1,6 @@
-﻿// Console.Write("input integer number ");
+﻿// СЕМИНАР C# 1
+
+//Console.Write("input integer number ");
 // int num = Convert.ToInt32(Console.ReadLine());
 // int result = num * num;
 // Console.WriteLine("result is " + result);
@@ -70,13 +72,32 @@
 
 //Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает последнюю цифру этого числа
 
-Console.Write("input N: ");
-int num = Convert.ToInt32(Console.ReadLine());
-if (num < 100 || num > 999){
-    Console.Write("invalid");
-}
-else {
-Console.WriteLine(num / 10 % 10);
-}
+// Console.Write("input N: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// if (num < 100 || num > 999){
+//     Console.Write("invalid");
+// }
+// else {
+// Console.WriteLine(num / 10 % 10);
+// }
 
 //if (num % 2 == 0) - то это четное число
+
+//ДЗ к Семинару С# 1
+
+//Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее
+
+Console.Write("введите первое число: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("введите второе число: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+
+if (num1 < num2){
+Console.Write(num1 + " меньше " + num2);
+}
+else if (num1 > num2){
+Console.Write(num1 + " больше " + num2);
+}
+else {
+    Console.Write("введены одинаковые числа");
+}
